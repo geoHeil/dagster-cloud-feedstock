@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - dagster ==1.7.10
-    - dagster-cloud-cli ==1.7.10
+    - dagster =={{ version }}
+    - dagster-cloud-cli =={{ version }}
     - questionary
     - requests
     - typer
