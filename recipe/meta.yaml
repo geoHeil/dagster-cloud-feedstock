@@ -1,5 +1,5 @@
 {% set name = "dagster-cloud" %}
-{% set version = "1.7.10" %}
+{% set version = "1.7.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dagster-cloud-{{ version }}.tar.gz
-  sha256: 22ad2aa9437b074b1c7b3ff79a098c6ac09fe48bd8df196dcd9c7a627b1cbffa
+  sha256: cb00ae1bd327596aed5e4ea62e4bb54479ff7caf324b0bbc2c93275e96b7b4b8
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - dagster ==1.7.10
-    - dagster-cloud-cli ==1.7.10
+    - dagster =={{ version }}
+    - dagster-cloud-cli =={{ version }}
     - questionary
     - requests
     - typer
