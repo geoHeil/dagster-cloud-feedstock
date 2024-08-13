@@ -23,10 +23,10 @@ requirements:
     - python >=3.8
     - dagster =={{ version }}
     - dagster-cloud-cli =={{ version }}
+    - pex >=2.1.132,<3
     - questionary
     - requests
     - typer
-    - pex
 
 test:
   imports:
