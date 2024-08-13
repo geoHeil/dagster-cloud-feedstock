@@ -144,6 +144,7 @@ Feedstock Maintainers
 =====================
 
 * [@geoHeil](https://github.com/geoHeil/)
+* [@jaiswal-ankur](https://github.com/jaiswal-ankur/)
 * [@milicevica23](https://github.com/milicevica23/)
 * [@tmirko](https://github.com/tmirko/)
 
