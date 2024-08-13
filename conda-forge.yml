@@ -9,4 +9,4 @@ bot:
     automerge: 'version'
     # only open PRs if resulting environment is solvable, useful for tightly coupled packages
     check_solvable: true
-    inspection: update-all
+    inspection: hint-all
