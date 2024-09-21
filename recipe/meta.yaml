@@ -1,5 +1,5 @@
 {% set name = "dagster-cloud" %}
-{% set version = "1.8.7" %}
+{% set version = "1.8.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dagster-cloud-{{ version }}.tar.gz
-  sha256: 3490b42d449503d0c5f57c675ce579358f82851c2e2aabc0325b18f00c9abb28
+  sha256: e96fdbf9b2d86e961bf859fb8ada04d562a91face59afac74b419e4cb5206bff
 
 build:
   noarch: python
