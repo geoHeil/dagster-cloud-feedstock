@@ -148,6 +148,3 @@ Feedstock Maintainers
 * [@milicevica23](https://github.com/milicevica23/)
 * [@tmirko](https://github.com/tmirko/)
 
-
-<!-- dummy commit to enable rerendering -->
-
