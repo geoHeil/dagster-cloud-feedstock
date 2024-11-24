@@ -1,5 +1,6 @@
 {% set name = "dagster-cloud" %}
 {% set version = "1.9.3" %}
+{% set min_python = "python >=3.8,<3.13" %}
 
 package:
   name: {{ name|lower }}
@@ -17,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - {{ min_python }} 
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - {{ min_python }} 
     - dagster =={{ version }}
     - dagster-cloud-cli =={{ version }}
     - pex >=2.1.132,<3
