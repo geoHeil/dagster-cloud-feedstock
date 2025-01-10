@@ -1,5 +1,5 @@
 {% set name = "dagster-cloud" %}
-{% set version = "1.9.3" %}
+{% set version = "1.9.7" %}
 {% set min_python = "python >=3.8,<3.13" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 486fb033a67ee3e1cd4e83b45fc06588b2bca1f0f11841a853b8f9b6c067cd64
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: f1b1f8d102d564599defb0c9c076e76a8b163400da3c43e709fbecf8932aece1
 
 build:
   noarch: python
@@ -25,6 +25,10 @@ requirements:
     - {{ min_python }} 
     - dagster =={{ version }}
     - dagster-cloud-cli =={{ version }}
+    - opentelemetry-api >=1.28.2,<2
+    - opentelemetry-sdk >=1.28.2,<2
+    - opentelemetry-exporter-otlp-proto-grpc >= 1.28.2,<2
+    - opentelemetry-exporter-otlp-proto-http >=1.28.2,<2
     - pex >=2.1.132,<3
     - questionary
     - requests
