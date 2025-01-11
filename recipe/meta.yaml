@@ -1,5 +1,6 @@
+{% set min_python = "python >=3.8,<3.13" %}
 {% set name = "dagster-cloud" %}
-{% set version = "1.9.7" %}
+{% set version = "1.9.8" %}
 {% set min_python = "python >=3.8,<3.13" %}
 
 package:
@@ -8,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f1b1f8d102d564599defb0c9c076e76a8b163400da3c43e709fbecf8932aece1
+  sha256: d4d16819ce9abfd5c02e3041aa5acd54358c4beb23cd94015df33a9f43d17b44
 
 build:
   noarch: python
@@ -18,11 +19,11 @@ build:
 
 requirements:
   host:
-    - {{ min_python }} 
+    - {{ min_python }}
     - pip
     - setuptools
   run:
-    - {{ min_python }} 
+    - {{ min_python }}
     - dagster =={{ version }}
     - dagster-cloud-cli =={{ version }}
     - opentelemetry-api >=1.28.2,<2
