@@ -16,7 +16,7 @@ build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -43,6 +43,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   license: Apache-2.0
