@@ -9,8 +9,9 @@
 {% set min_python = "python >=3.8,<3.13" %}
 {% set min_python = "python >=3.8,<3.13" %}
 {% set min_python = "python >=3.8,<3.13" %}
+{% set min_python = "python >=3.8,<3.13" %}
 {% set name = "dagster-cloud" %}
-{% set version = "1.10.5" %}
+{% set version = "1.10.6" %}
 {% set min_python = "python >=3.8,<3.13" %}
 
 package:
@@ -19,7 +20,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 28dcf85264a3eaefe59b555af99ae9f999cbeb2ba3ceae6212d0db6750b334d8
+  sha256: 25183ba7074818035c1c645a828bf86e11445f78c6cba0e8bbe5ecf46e3ee0f8
 
 build:
   noarch: python
