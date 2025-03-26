@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  min_python: python >=3.8,<3.13
+  python_min: 3.8
   name: dagster-cloud
   version: 1.10.6
 
@@ -20,11 +20,11 @@ build:
 
 requirements:
   host:
-    - ${{ min_python }}
+    - python ${{ python_min }}.*
     - pip
     - setuptools
   run:
-    - ${{ min_python }}
+    - python >=${{ python_min }}
     - dagster ==${{ version }}
     - dagster-cloud-cli ==${{ version }}
     - opentelemetry-api >=1.28.2,<2
