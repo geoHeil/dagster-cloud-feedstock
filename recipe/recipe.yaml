@@ -2,6 +2,7 @@ schema_version: 1
 
 context:
   python_min: '3.9'
+  python_max: '3.14'
   name: dagster-cloud
   version: "1.10.10"
 
@@ -14,13 +15,13 @@ source:
   sha256: 43336e771b53796cf74085a8af38d10fb4e2429200eedda6bb035009dd8d2cb6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python ${{ python_min }}.*
+    - python >=${{ python_min }},<${{ python_max }}
     - pip
     - setuptools
   run:
